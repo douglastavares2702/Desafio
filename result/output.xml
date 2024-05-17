@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-17T09:56:03.957077" rpa="false" schemaversion="5">
+<suite id="s1" name="preencherTodosCampos" source="C:\Users\datg2\Desafio\preencherTodosCampos.robot">
+<test id="s1-t1" name="Abrir o Browser" line="28">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:04.193322" level="INFO">Opening browser 'chrome' to base url 'https://tinyurl.com/desafioTesterSGE'.</msg>
+<msg time="2024-05-17T09:56:04.934808" level="WARN">The chromedriver version (124.0.6367.207) detected in PATH at C:\Users\datg2\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (125.0.6422.61); currently, chromedriver 125.0.6422.60 is recommended for chrome 125.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-17T09:56:04.193322" elapsed="4.863227"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-17T09:56:09.056549" elapsed="0.248427"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:04.193322" elapsed="5.111654"/>
+</test>
+<test id="s1-t2" name="Validar o acesso à página" line="32">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${AcessoPagina}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-17T09:56:09.307054" elapsed="0.033690"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:09.307054" elapsed="0.034718"/>
+</test>
+<test id="s1-t3" name="Inserir nome válido do convidado" line="35">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:09.342743" level="INFO">Typing text 'Douglas Tavares' into text field '//input[@aria-labelledby='i1']'.</msg>
+<arg>locator=${SeuNome}</arg>
+<arg>text=Douglas Tavares</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:09.341772" elapsed="0.241104"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:09.341772" elapsed="0.242105"/>
+</test>
+<test id="s1-t4" name="Clicar no campo &quot;Escolher&quot;" line="38">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:09.584880" level="INFO">Clicking element '//div[@class='MocG8c HZ3kWc mhLiyf LMgvRb KKjvXb DEh1R'][contains(.,'Escolher')]'.</msg>
+<arg>locator=${escolher}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:09.583877" elapsed="0.154164"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:09.583877" elapsed="0.157613"/>
+</test>
+<test id="s1-t5" name="Clicar no elemento &quot;Mousse de maracujá&quot;" line="41">
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:09.741490" level="INFO">Double clicking element '(//div[@data-value='Mousse de maracujá'])[1]'.</msg>
+<arg>locator=${maracuja}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:09.741490" elapsed="0.744630"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:09.741490" elapsed="0.752861"/>
+</test>
+<test id="s1-t6" name="Selecionar &quot;Sim, participarei&quot; no card &quot;Você pode participar?&quot;" line="44">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:10.500368" level="INFO">Clicking element '(//div[contains(@class,'AB7Lab Id5V1')])[1]'.</msg>
+<arg>locator=${SelecionarSim}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:10.499365" elapsed="0.085831"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:10.496367" elapsed="0.088829"/>
+</test>
+<test id="s1-t7" name="Inserir o número de participantes" line="47">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:10.587238" level="INFO">Typing text '4' into text field '//input[contains(@aria-labelledby,'i19')]'.</msg>
+<arg>locator=${NumParticipantes}</arg>
+<arg>text=4</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:10.587238" elapsed="0.125292"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:10.586243" elapsed="0.126287"/>
+</test>
+<test id="s1-t8" name="Selecionar o item &quot;Prato principal&quot;" line="50">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:10.712530" level="INFO">Clicking element '//div[contains(@aria-label,'Prato principal')]'.</msg>
+<arg>locator=${pratoprincipal}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:10.712530" elapsed="0.196214"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:10.712530" elapsed="0.196214"/>
+</test>
+<test id="s1-t9" name="Selecionar o item &quot;Salada&quot;" line="53">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:10.913884" level="INFO">Clicking element '//div[contains(@aria-label,'Salada')]'.</msg>
+<arg>locator=${salada}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:10.912750" elapsed="0.045946"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:10.911772" elapsed="0.047990"/>
+</test>
+<test id="s1-t10" name="Selecionar o item &quot;Sobremesa&quot;" line="56">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:10.961740" level="INFO">Clicking element '//div[contains(@aria-label,'Sobremesa')]'.</msg>
+<arg>locator=${sobremesa}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:10.961740" elapsed="0.041121"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:10.961740" elapsed="0.041121"/>
+</test>
+<test id="s1-t11" name="Selecionar o item &quot;Bebidas&quot;" line="59">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:11.003865" level="INFO">Clicking element '//div[contains(@aria-label,'Bebidas')]'.</msg>
+<arg>locator=${bebidas}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:11.003865" elapsed="0.040050"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:11.003865" elapsed="0.040050"/>
+</test>
+<test id="s1-t12" name="Selecionar o item &quot;Acompanhamentos/aperitivos&quot;" line="62">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:11.043915" level="INFO">Clicking element '//div[contains(@aria-label,'Acompanhamentos/aperitivos')]'.</msg>
+<arg>locator=${AcompAperitivos}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:11.043915" elapsed="0.049104"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:11.043915" elapsed="0.049998"/>
+</test>
+<test id="s1-t13" name="Inserir um item no campo &quot;Outro&quot;" line="65">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:11.093913" level="INFO">Typing text 'Salaminho' into text field '//input[@class='Hvn9fb zHQkBf']'.</msg>
+<arg>locator=${outro}</arg>
+<arg>text=Salaminho</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:11.093913" elapsed="0.111173"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:11.093913" elapsed="0.111173"/>
+</test>
+<test id="s1-t14" name="Validar a frase &quot;Selecione até 3 opções&quot;" line="68">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${AteTresOpcoes}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-17T09:56:11.205086" elapsed="0.015629"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:11.205086" elapsed="0.015629"/>
+</test>
+<test id="s1-t15" name="Desabilitar o item &quot;bebidas&quot;" line="71">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:11.230747" level="INFO">Clicking element '//div[contains(@aria-label,'Bebidas')]'.</msg>
+<arg>locator=${bebidas}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:11.230747" elapsed="0.045080"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:11.230747" elapsed="0.045685"/>
+</test>
+<test id="s1-t16" name="Desabilitar o item &quot;Salada&quot;" line="74">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:11.276958" level="INFO">Clicking element '//div[contains(@aria-label,'Salada')]'.</msg>
+<arg>locator=${salada}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:11.276958" elapsed="0.042933"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:11.276958" elapsed="0.042933"/>
+</test>
+<test id="s1-t17" name="Desabilitar o item &quot;Sobremesa&quot;" line="77">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:11.321899" level="INFO">Clicking element '//div[contains(@aria-label,'Sobremesa')]'.</msg>
+<arg>locator=${sobremesa}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:11.321899" elapsed="0.051777"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:11.320900" elapsed="0.052776"/>
+</test>
+<test id="s1-t18" name="Inserir a resposta &quot;Lactose&quot; no campo &quot;Você tem alguma alergia ou restrição alimentar?&quot;" line="80">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:11.375753" level="INFO">Typing text 'Lactose' into text field '//input[contains(@aria-labelledby,'i46')]'.</msg>
+<arg>locator=${alergiaRestricao}</arg>
+<arg>text=Lactose</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:11.375753" elapsed="0.095502"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:11.374751" elapsed="0.096504"/>
+</test>
+<test id="s1-t19" name="Inserir um e-mail valido" line="83">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:11.471255" level="INFO">Typing text 'datg2702@hotmail.com' into text field '//input[contains(@type,'email')]'.</msg>
+<arg>locator=${email}</arg>
+<arg>text=datg2702@hotmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:11.471255" elapsed="0.148121"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:11.471255" elapsed="0.148121"/>
+</test>
+<test id="s1-t20" name="Clicar em Enviar" line="86">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:11.619376" level="INFO">Clicking element '//span[@class='NPEfkd RveJvd snByac'][contains(.,'Enviar')]'.</msg>
+<arg>locator=${enviar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-17T09:56:11.619376" elapsed="0.490800"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:11.619376" elapsed="0.490800"/>
+</test>
+<test id="s1-t21" name="Validar formulário enviado com sucesso" line="89">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${MensagemEnviadoSucesso}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-17T09:56:12.112038" elapsed="0.084483"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:12.112038" elapsed="0.084483"/>
+</test>
+<test id="s1-t22" name="Fechar o Browser" line="92">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-05-17T09:56:12.355740" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-05-17T09:56:12.198401" elapsed="0.157339"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-17T09:56:12.355740" elapsed="2.201777"/>
+</kw>
+<status status="PASS" start="2024-05-17T09:56:12.197387" elapsed="2.360130"/>
+</test>
+<doc>Desafio Grupo MGO</doc>
+<status status="PASS" start="2024-05-17T09:56:03.972585" elapsed="10.584932"/>
+</suite>
+<statistics>
+<total>
+<stat pass="22" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="22" fail="0" skip="0" id="s1" name="preencherTodosCampos">preencherTodosCampos</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-17T09:56:04.934808" level="WARN">The chromedriver version (124.0.6367.207) detected in PATH at C:\Users\datg2\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (125.0.6422.61); currently, chromedriver 125.0.6422.60 is recommended for chrome 125.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
